@@ -6,14 +6,22 @@ def printNTimesWord(name, totalPrint):
     printNTimesWord(name, totalPrint - 1)
 
 def printNTimesDigit(count, totalCount):
-    if count < totalCount:
+    if count > totalCount:
         return
-    print("  " + str(count))
-    printNTimesDigit(count +1, totalCount)
+    print(count)
+    printNTimesDigit(count + 1, totalCount)
+
+
+def printNTimesDigitReverse(count, totalCount):
+    if count < 1:
+        return
+    print(count)
+    printNTimesDigitReverse(count - 1, totalCount)
+
 
 name = "Hello World"
 totalPrint = 5
-count = 0
+count = 1
 totalCount = 5
 
 print("\n","===============================================", "\n")
@@ -21,9 +29,14 @@ print(" Printing word " + str(totalPrint) + " times\n")
 printNTimesWord(name, totalPrint)
 print("\n","===============================================","\n")
 
-print("\n","===============================================", "\n")
+
 print(" Printing from " + str(count) +" to " + str(totalCount) +"\n")
 printNTimesDigit(count, totalCount)
+print("\n","===============================================","\n")
+
+
+print(" Printing from " + str(totalCount) +" to " + str(count) +"\n")
+printNTimesDigitReverse(totalCount, totalCount)
 print("\n","===============================================","\n")
 
 
