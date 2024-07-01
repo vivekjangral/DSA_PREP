@@ -10,3 +10,8 @@ def selection_sort(unsorted_arr):
 unsorted_arr = [0,2,1,2,0]
 sorted_arr = selection_sort(unsorted_arr)
 print(sorted_arr)
+
+# Time Complexity
+# Worst -   O(n^2)
+# Avg   -   O(n^2)
+# Best  -   O(n^2)

@@ -17,3 +17,8 @@ def bubble_sort(unsorted_arr):
 unsorted_arr = [2,3,4,5,6,7,8,9]
 sorted_arr = bubble_sort(unsorted_arr)
 print(sorted_arr)
+
+# Time Complexity
+# Worst -   O(n^2)
+# Avg   -   O(n^2)
+# Best  -   O(n)
